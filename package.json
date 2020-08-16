@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "yarn run build && node build/server.js",
+    "start": "yarn run build && node src/server.ts",
     "build": "rimraf ./build && tsc",
     "startdev": "ts-node-dev src/server.ts",
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
